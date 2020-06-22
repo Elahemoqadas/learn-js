@@ -1,0 +1,172 @@
+header{
+    width:100%;
+    height: 2rem;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 16px;
+    background-color:black;
+}
+header h1{
+    margin: 8px;
+   color: darkturquoise; 
+   font-size: 48px;
+}
+label{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 8px;
+    color: #99c2ff;
+}
+input{
+    font:inherit;
+    border: 0.4px solid #004d80;
+    padding: 0.8px;
+    margin-bottom: 16px;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #000000;
+}
+input:focus{
+    background-color: #ccffff;
+    border: none;
+}
+header button{
+    margin: auto;
+    width: 800px;
+    font: oblique;
+    padding: 6.4px;
+    background-color: #ccffff;
+    border: 4px solid #000000;
+    color: #000000;
+    border-radius: 4px;
+    box-shadow: 0.04px 0.8px 5px 0.06px #004d80;
+    cursor: pointer;
+}
+header button:hover,
+header button:active {
+  border-color:#004d80;
+}
+.btn{
+    font: inherit;
+    padding:0 64px;
+    border: 0.72px solid #662200;
+    background-color: #99c2ff;
+    color: #000000;
+    border-radius: 3.2px;
+    cursor: pointer;
+    margin: 4px;
+}
+.canclbtn{
+    color: peachpuff ;
+    background-color: transparent;
+    border: none;
+}
+.addbtn{
+    font-weight: bolder;
+}
+.canclbtn:hover,
+.canclbtn:active {
+  border:0.64px solid #ccffff;
+}
+.card{
+    background-color: #000000;
+    border-radius: 4px;
+    box-shadow: 0 0.8px 1px 0.6px indigo;
+}
+#listofmovie {
+    list-style: none;
+    max-width: 72%;
+    margin: 20px auto;
+    padding: 7.2px;
+  }
+.movie-element{
+    box-shadow: 0 4px 8px 0 #000000;
+    border-radius: 3.2px;
+    display: flex;
+    background-color:black;
+}
+.movie-element h2{
+    color: darkgray;
+    margin:48px;
+    font-size: 56px;
+}
+.movie-element p{
+    font-size: 48px;
+    color:#000000;
+    display: inline;
+    background-color: #ccffff;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 56px;
+}
+.movie-element-img{
+    flex: 1;
+    justify-content: flex-end;
+    border-radius: 3.2px 0 0 3.2px;
+    overflow: hidden;
+}
+.movie-element-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.movie-element-info{
+    flex: 2;
+    padding: 4px;
+}
+#entry-text{
+    text-align: center;
+    max-width:80%;
+    margin: 3.2rem auto;
+    padding: 1rem;
+    color:#ccffff ;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.modal{
+    z-index: 100;
+    position: fixed;
+    width:64%;
+    top: 56vh;
+    left: 20%;
+    display: none;
+}
+.modal.visible{
+    display: block;
+    animation: fade-slide-in 1s ease-out forwards;
+}
+.modal_actions{
+    display: flex;
+    margin: 4px;
+    padding: 4px 8px;
+    justify-content: flex-end;
+}
+#backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    pointer-events: none;
+    display: none;
+}
+  
+#backdrop.visible {
+    display: block;
+    pointer-events: all;
+}
+#add-modal .modalinputs{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes fade-slide-in {
+    from {
+      transform: translateY(-5rem);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  

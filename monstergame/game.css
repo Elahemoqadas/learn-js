@@ -1,0 +1,63 @@
+body{
+    background-color: #000000;
+}
+h2{
+    margin:0.4rem;
+}
+progress{
+    appearance: none;
+    width: 80%;
+    height: 1.6rem;
+    color :#004d4d;
+    border: 1px solid #000000;
+    margin:1rem;
+}
+progress[value]::-webkit-progress-bar,
+progress[value]{
+    background-color: #808080;;
+    box-shadow: 0 2px 4px 0   #008040;
+}
+progress[value]::-webkit-progress-value {
+    background-color:  #000000;
+    transition: all 0.24s ease-out;
+}
+  
+  /* progress[value]::-moz-progress-bar {
+    background-color: #000000;
+    transition: all 0.24s ease-out;
+  } */
+  button{
+    font: initial;
+    background: #003311;
+    color: tan;
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: cell;
+    margin: 0.8rem;
+  }
+  button:hover,
+  button:active{
+    background-color: #000000;
+  }
+  #health-level,
+  #contorols{
+    margin: 0.72rem auto;
+    width:72rem;
+    text-align: center;
+    border-radius: 64px;
+    padding: 1.6rem;
+    box-shadow: 0 2.4px 3.2px 0 #000000;
+    background: #ddff80;
+  }
+  #contorols{
+    display: flex;
+    flex-direction: column;
+  }
+  #bouns_life{
+    color:#004d4d;
+    background:#99ffbb;
+    padding:0.8rem;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0.24rem;
+  }
